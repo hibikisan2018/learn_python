@@ -4,8 +4,6 @@
 Created on Sun May 13 18:56:20 2018
 @author: hibikisan
 """
-#N=10**3
-
 def makelist01():
     a = []
     for i in range(N):
