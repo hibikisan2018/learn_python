@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon Apr  9 23:55:26 2018
+Created on June 6 2018
 @author: hibikisan
 """
 import random
