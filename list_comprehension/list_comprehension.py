@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sun May 13 18:56:20 2018
+Created on Sun May 19 2018
 @author: hibikisan
 """
 def makelist01(n):
