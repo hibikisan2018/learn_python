@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on May 20 2018
-
+Refer to "https://hibiki-press.tech/algorithm/sum_2darray/698"
 @author: hibikisan
 """
 import random
