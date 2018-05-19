@@ -11,7 +11,6 @@ def charcounter(l):
         count_.setdefault(s, 0)
         count_[s] += 1
     return count_
-    
 
 if __name__ == '__main__':
   
