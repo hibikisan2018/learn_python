@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on June 6 2018
+Reference: https://hibiki-press.tech/algorithm/sum_array/659
 @author: hibikisan
 """
 import random

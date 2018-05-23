@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on May 23 2018
+Reference: https://hibiki-press.tech/algorithm/simplesum/122
 @author: hibikisan
 """
 import time
 import matplotlib.pyplot as plt
 import math
 
-def sum1(n):
-    sum = 0
+def sum_1_to_n(n):
+    sum_ = 0
     var = 1
     while(var <= n):
-        sum += var
+        sum_ += var
         var += 1
-    print('sum={}'.format(sum))
+    return sum_
     
 if __name__ == '__main__':
     #Define the list in which the processing time is stored
@@ -26,7 +26,7 @@ if __name__ == '__main__':
         #Start time
         time0 = time.time()
         #Calculate the sum from 1 to N 
-        sum1(n)
+        sum_n = sum_1_to_n(n)
         #End time
         time1 = time.time()
         #Add the proecessing time to 'timelist'

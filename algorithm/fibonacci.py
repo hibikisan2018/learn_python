@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on May 30 2018
+Reference: https://hibiki-press.tech/algorithm/fibonatch/336
 @author: hibikisan
 """
 import time

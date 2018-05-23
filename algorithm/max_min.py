@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+Reference: https://hibiki-press.tech/algorithm/max_min/694
 @author: hibikisan
 """
 import random

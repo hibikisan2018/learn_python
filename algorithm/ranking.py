@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on May 19 2018
+Reference: https://hibiki-press.tech/algorithm/ordering/696
 @author: hibikisan
 """
 def rank(data):
@@ -47,7 +47,3 @@ if __name__ == '__main__':
     plt.xlabel("log10(N)")
     plt.ylabel("log10(Time) [s]")
     plt.show()
-    
-
-
-
