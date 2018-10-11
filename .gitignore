@@ -1,2 +1,6 @@
 csv/tmp/
 algorithm/tmp/
+selenium/
+face_recognition/image/
+face_recognition/tmp/
+face_recognition/.apikey
