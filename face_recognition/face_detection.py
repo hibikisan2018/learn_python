@@ -12,9 +12,11 @@ import os, sys
 import math
 
 def get_apikey():
-# API Keys are stored with the form of json in '.apikey' file, 
-# which is put in the same folder as this script and 
-# should be granted proper permisson.
+    """
+    API Keys are stored with the form of json in '.apikey' file, 
+    which is put in the same folder as this script and 
+    should be granted proper permisson.
+    """
 
     #load API Keys
     with open('.apikey', 'r') as f:
@@ -24,10 +26,15 @@ def get_apikey():
 
 def get_face_pos(p, r):
     """
-    Input: face_rectangle -> list [width, top, left, height] 
-    Output: headpose_roll -> degree
+    To rotate rectangle with angle 'r' degree
+    Input: 
+      p: face_rectangle = list [width, top, left, height] from Face Detection API response 
+      r: headpose_roll angle(degree)
+    Output:
+      4 corner positions(x, y) of rotated rectangle
     """
     w, t, l, h = p[0], p[1], p[2], p[3]
+    # Change degree to radian
     theta = math.radians(r)
     
     pos = [(l, t), (l+w, t), (l+w, t+h), (l, t+h)]
@@ -35,8 +42,6 @@ def get_face_pos(p, r):
 
     rotated_pos = []
     for point in pos:
-        #x = point[0]
-        #y = point[1]
         x = center[0] + (point[0]-center[0])*math.cos(theta) - (point[1]-center[1])*math.sin(theta) 
         y = center[1] + (point[0]-center[0])*math.sin(theta) + (point[1]-center[1])*math.cos(theta) 
         
