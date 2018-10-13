@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+###########################################################
 Let's try Face Detection API of Face++
-
+###########################################################
 Usage: 
-    python3 face_detection.py [IMAGE_FILE] [SAVE_FILE]
+  python3 face_detection.py [IMAGE_FILE] [SAVE_FILE]
 
 [IMAGE_FILE]: original image file
 [SAVE_FILE] : save file name
@@ -24,18 +25,17 @@ import math
 
 def get_apikey():
     """
-    To get 'API Key' and 'API secret' from external file
-    for access to Face Detection Web API.
-    The external files are named '.apikey' in this script but you can
-    modifiy anything if you want.
+    The function to get 'API Key' and 'API Secret' which are neede for access to Face Detection.
+    These keys are stored in the external Key_file, named '.apikey' in this script.
+    You can modifiy key_file name to anything if you want.
     
-    'API Key' and 'API Secret' are written with json form as below:
+    In key_file, 'API Key' and 'API Secret' are written with json form as below:
         {
         'api_key': '*****************',
         'api_secret':'******************'
         }    
-     And this file is stored in the same directory as this script.   
-     I recommend to grant proper permisson to this file due to security reason.     
+     And key_file is put in the same directory as this script.   
+     I recommend to grant proper permisson to key_file due to security reason.     
     """
     #load API Keys
     with open('.apikey', 'r') as f:
