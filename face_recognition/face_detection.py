@@ -135,15 +135,15 @@ def face_detection(imgfile, savefile):
             age = face['attributes']['age']['value']
             mouthstatus = max(face['attributes']['mouthstatus'].items(), key=lambda x:x[1])[0]
             glass = face['attributes']['glass']['value']
-            skinstatus = max(face['attributes']['skinstatus'].items(), key=lambda x:x[1])[0]
-            ethnicity = face['attributes']['ethnicity']['value']
+            #skinstatus = max(face['attributes']['skinstatus'].items(), key=lambda x:x[1])[0]
+            #ethnicity = face['attributes']['ethnicity']['value']
             headpose_roll = face['attributes']['headpose']['roll_angle'] 
 
             right_eye_gaze = face['attributes']['eyegaze']['right_eye_gaze']
             left_eye_gaze = face['attributes']['eyegaze']['left_eye_gaze']
             
             # Generate text data
-            text = 'gender:{}\nage:{}\nethnicity:{}\nglass:{}\nemotion:{}\nmouth:{}\nskin:{}'.format(gender, age, ethnicity, glass, emotion, mouthstatus, skinstatus)
+            text = 'gender:{}\nage:{}\nglass:{}\nemotion:{}\nmouth:{}'.format(gender, age, glass, emotion, mouthstatus)
         else:
             # If there is no attribute parameters, values are defined for below script 
             text = ''
