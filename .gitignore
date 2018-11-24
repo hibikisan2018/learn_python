@@ -4,3 +4,6 @@ selenium/
 face_recognition/image/
 face_recognition/tmp/
 face_recognition/.apikey
+pillow/
+mysql/
+time/
