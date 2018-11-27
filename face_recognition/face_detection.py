@@ -27,13 +27,17 @@ def get_apikey():
     """
     The function to get 'API Key' and 'API Secret' which are neede for access to Face Detection.
     These keys are stored in the external Key_file, named '.apikey' in this script.
-    You can modifiy key_file name to anything if you want.
+    You can change the name of key_file to anything if you want. In this case, note that
+    you need to change the 1st argument in open() function in line 42.
     
     In key_file, 'API Key' and 'API Secret' are written with json form as below:
         {
-        'api_key': '*****************',
-        'api_secret':'******************'
-        }    
+        "api_key": "*****************",
+        "api_secret":"******************"
+        } 
+        
+     # Note that strings are enclosed with double quotation mark (") in json format.   
+        
      And key_file is put in the same directory as this script.   
      I recommend to grant proper permisson to key_file due to security reason.     
     """
