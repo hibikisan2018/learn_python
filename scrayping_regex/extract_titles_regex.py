@@ -12,11 +12,11 @@ res = requests.get(url)
 try:
     res.raise_for_status()
 
-    subtitles = re.findall(r'<span class="m-miM\d{2}_titleL".*>.+</span></a>', res.text)
+    subtitles = re.findall(r'<span class="m-miM\d{2}_titleL".*>(.+)</span></a>', res.text)
+
     if len(subtitles) != 0:
         for l in subtitles:
-            subtitles_ = re.search(r'<span class="m-miM\d{2}_titleL".*>(.+)</span>', l).group(1)
-            print(subtitles_)
+            print(l)
     else:
         print('No article')
 
