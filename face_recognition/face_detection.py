@@ -61,7 +61,7 @@ def get_face_pos(p, r):
     theta = math.radians(r)
     
     # Calculate 4 corner positions from input 'p' 
-    w, t, l, h = p[0], p[1], p[2], p[3]
+    t, l, l, h = p[0], p[1], p[2], p[3]
     pos = [(l, t), (l+w, t), (l+w, t+h), (l, t+h)]
  
     # Calculate the center of rectangle
